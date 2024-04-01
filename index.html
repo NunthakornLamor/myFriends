@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friends Age Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="table">
+            <form id="form-wrap">
+                <div class="btn-wrap appearAnimation">
+                    <button type="button" onclick="randomFriends()" style="background-color: rgb(148, 188, 253);">Random</button>
+                    <button type="submit" onclick="sum()">Sum Age</button>
+                    <button type="submit" onclick="findMin()">Find Min</button>
+                    <button type="submit" onclick="findMax()">Find Max</button>
+                    <button type="submit" onclick="average()">Average</button>
+                    <button type="button" ondblclick="clearForm()" style="background-color: rgb(253, 148, 169);width: 200px;">Clear (Double click)</button>
+                </div>
+                <div id="form">
+
+                </div>
+            </form>
+        </div>
+        <div class="result appearAnimation" id="result">
+            <h2 id="result-header">Input your friend's name and age</h2>
+            <h4 class="result-footer" id="result-footer">Then clicking on any button to see the result</h4>
+        </div>
+    </div>
+
+</body>
+<script src="controller.js"></script>
+
+</html>

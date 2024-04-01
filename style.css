@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@keyframes scrollup {
+    from {
+        transform: translateY(10%);
+        opacity: 0%;
+    }
+    to {
+        transform: translateY(0%);
+        opacity: 100%;
+    }
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+}
+
+.container {
+    padding: 2%;
+    width: 50%;
+}
+
+.table{
+    background-color: white;
+    margin-bottom: 5%;
+    width: 100%;
+}
+
+.btn-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+    height: 80px;
+}
+
+button {
+    padding: 2%;
+    width: 120px;
+    background-color: rgb(232, 232, 232);
+    border-color: transparent;
+    border-radius: 5px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 5px;
+}
+
+input {
+    width: 200px;
+    height: 80%;
+    outline: none;
+    font-size: 120%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.form-row {
+    background-color: rgb(232, 232, 232);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1%;
+    width: 93%;
+    height: 40px;
+}
+
+
+.result{
+    background-color: rgb(232, 232, 232);
+    padding: 2%;
+    text-align: center;
+    width: 93%;
+    margin: auto;
+}
+
+
+.appearAnimation {
+    opacity: 0;
+    animation: 1s scrollup ease forwards;
+}
+
+.flexLine {
+    display: flex;
+    flex-direction: row;
+}
+
